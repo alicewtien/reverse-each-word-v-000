@@ -2,9 +2,9 @@ def reverse_each_word(sentence)
   words = sentence.split(" ")
   reversed = []
   words.each do |word|
-    reversed << word.reverse!
+    reversed << (word[0]).reverse!
   end
-  reversed
+  reversed.join(" ")
 
 
 end
