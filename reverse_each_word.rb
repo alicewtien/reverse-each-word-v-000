@@ -13,6 +13,6 @@ def reverse_each_word(sentence)
   words = sentence.split(" ") #convert the string into an array
   words.collect do |word| #reverse each word individually with .collect
     word.reverse! #add the reversed words into the reversed array
-  end
+  end #- no need for new array - collect changes return value to new data
   words.join(" ") #convert the array back into a string
 end
